@@ -669,7 +669,7 @@ body.page-bg .news-item-bg {
 #main {
   padding: 150px 0 0; }
   #main .slogan {
-    font: 500 calc(1rem + 4.15vw)/110% var(--font-secondary);
+    font: 500 calc(1rem + 3.15vw)/110% var(--font-secondary);
     text-align: center;
     text-transform: uppercase;
     color: var(--color2); }
