@@ -22,9 +22,6 @@
 .Jc\(fe\) {
   justify-content: flex-end; }
 
-.Jc\(fs\) {
-  justify-content: flex-start; }
-
 .Jc\(sb\) {
   justify-content: space-between; }
 
@@ -35,7 +32,7 @@
   margin-left: 30px; }
 
 :root {
-  --font-primary: 'Montserrat', sans-serif;
+  --font-primary: 'Roboto', sans-serif;
   --font-secondary: 'Oswald', sans-serif;
   --color1: #222732;
   --color2: #313847;
@@ -218,7 +215,7 @@ h2.global-title {
     #header ul.navi > li a {
       color: #fff;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: .5px;
       font: 400 13px/100% var(--font-primary); }
       #header ul.navi > li a:hover {
         color: var(--colorp); }
@@ -406,7 +403,7 @@ body.page-bg .news-item-bg {
         color: #fff; }
 
 #grid {
-  padding: 150px 0; }
+  padding: 120px 0; }
   #grid .portfolio-wrap {
     position: relative;
     margin: 0 auto;
@@ -460,7 +457,7 @@ body.page-bg .news-item-bg {
         opacity: 1; }
     #grid .flex-grid .item {
       width: calc(3 * calc(1/10 * 100%));
-      height: 32vw;
+      height: 23vw;
       display: block;
       position: relative !important;
       left: 0 !important;
@@ -626,7 +623,7 @@ body.page-bg .news-item-bg {
     transform: translateY(0); }
 
 #news {
-  padding: 80px 0; }
+  padding: 40px 0; }
   #news .read-news {
     margin-top: 50px; }
 
@@ -634,7 +631,7 @@ body.page-bg .news-item-bg {
   margin-top: 100px; }
   .news-list .news-item {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    padding: 60px 0; }
+    padding: 20px 0; }
     .news-list .news-item:first-child {
       border-top: 1px solid rgba(0, 0, 0, 0.15); }
     .news-list .news-item .title-holder {
@@ -667,7 +664,7 @@ body.page-bg .news-item-bg {
       transition: all 0.6s cubic-bezier(0.38, 0.005, 0.215, 1); }
 
 #main {
-  padding: 150px 0 0; }
+  padding: 10px 0 0; }
   #main .slogan {
     font: 500 calc(1rem + 3.15vw)/110% var(--font-secondary);
     text-align: center;
@@ -912,3 +909,5 @@ by Michael Thomas aka SUPAMIKE
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--color1); }
+
+/*# sourceMappingURL=maps/app.css.map */
