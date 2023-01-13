@@ -301,6 +301,34 @@ body.page-bg .news-item-bg {
 .page-about #page .wrapper {
   padding: 50px 0 0; }
 
+.page-catalog-item #page {
+  min-height: calc(100vh - 522px); }
+
+.page-catalog-item #page .wrapper {
+  padding: 50px 0 0; }
+
+.page-catalog-item .company-info ul li {
+  font: 400 16px/130% var(--font-primary);
+  margin-bottom: 20px; }
+  .page-catalog-item .company-info ul li .l {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: var(--font-secondary); }
+  .page-catalog-item .company-info ul li .r {
+    margin-left: 20px; }
+  .page-catalog-item .company-info ul li > div {
+    width: 50%; }
+
+.page-catalog-item .section-left {
+  width: 60%; }
+
+.page-catalog-item .section-right {
+  margin-left: 50px;
+  flex: 1; }
+  .page-catalog-item .section-right .backform {
+    padding: 20px;
+    background: var(--color4); }
+
 .page-contacts #page .wrapper {
   padding: 50px 0 0; }
 
@@ -308,15 +336,17 @@ body.page-bg .news-item-bg {
   width: 60%; }
   .page-contacts .contacts .left .section {
     margin-bottom: 50px; }
-    .page-contacts .contacts .left .section p {
-      font: 400 15px/130% var(--font-primary);
-      margin-bottom: 10px; }
-      .page-contacts .contacts .left .section p span {
+    .page-contacts .contacts .left .section .section-line {
+      font: 400 16px/130% var(--font-primary);
+      margin-bottom: 20px; }
+      .page-contacts .contacts .left .section .section-line > div {
+        width: 50%; }
+      .page-contacts .contacts .left .section .section-line .section-line_left {
+        font-size: 17px;
         text-transform: uppercase;
-        font-family: var(--font-secondary);
-        font-size: 17px; }
-      .page-contacts .contacts .left .section p.title {
-        font: 400 22px/120% var(--font-secondary); }
+        font-family: var(--font-secondary); }
+      .page-contacts .contacts .left .section .section-line .section-line_right {
+        margin-left: 20px; }
 
 .page-contacts .contacts .right {
   margin-left: 50px;
@@ -367,9 +397,12 @@ body.page-bg .news-item-bg {
         #page.catalog .catalog-body .catalog-main .catalog-list .catalog-item_logo img {
           max-width: 55px; }
         #page.catalog .catalog-body .catalog-main .catalog-list .catalog-item_title {
+          text-transform: uppercase;
+          font-family: var(--font-secondary);
           font-size: 20px;
+          color: var(--color1);
           line-height: 1.1;
-          font-weight: 600; }
+          font-weight: 500; }
         #page.catalog .catalog-body .catalog-main .catalog-list .catalog-item_industry {
           margin: 4px 0 0;
           font-weight: 400;
