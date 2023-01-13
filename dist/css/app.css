@@ -40,7 +40,7 @@
   --color3-1: rgb(238, 238, 238);
   --color4: #eee;
   --colorp: #ff7d44;
-  --wrapper-width: 1116px;
+  --wrapper-width: 1200px;
   --header-height: 70px;
   --header-height-notactive: 120px;
   --nav-margin-item: 20px;
@@ -298,6 +298,33 @@ body.page-bg .news-item-bg {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); }
 
+.page-about #page .wrapper {
+  padding: 50px 0 0; }
+
+.page-contacts #page .wrapper {
+  padding: 50px 0 0; }
+
+.page-contacts .contacts .left {
+  width: 60%; }
+  .page-contacts .contacts .left .section {
+    margin-bottom: 50px; }
+    .page-contacts .contacts .left .section p {
+      font: 400 15px/130% var(--font-primary);
+      margin-bottom: 10px; }
+      .page-contacts .contacts .left .section p span {
+        text-transform: uppercase;
+        font-family: var(--font-secondary);
+        font-size: 17px; }
+      .page-contacts .contacts .left .section p.title {
+        font: 400 22px/120% var(--font-secondary); }
+
+.page-contacts .contacts .right {
+  margin-left: 50px;
+  flex: 1; }
+  .page-contacts .contacts .right .backform {
+    padding: 20px;
+    background: var(--color4); }
+
 .page-header {
   background: var(--color3-1);
   padding: calc(var(--header-height-notactive) + 60px) 0 60px;
@@ -378,7 +405,9 @@ body.page-bg .news-item-bg {
     #hero .slider .slider-nav {
       position: absolute;
       right: 0;
+      left: 0;
       bottom: 0;
+      width: 100%;
       padding: 60px; }
       #hero .slider .slider-nav > a {
         color: #fff;
@@ -566,9 +595,8 @@ body.page-bg .news-item-bg {
     display: block;
     width: auto;
     margin: 0;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
+    font: 500 18px/26px var(--font-secondary);
+    text-transform: uppercase;
     position: relative;
     color: #222;
     float: left; }
