@@ -28,9 +28,6 @@
 .Flw\(w\) {
   flex-wrap: wrap; }
 
-.Mt\(20px\) {
-  margin-top: 20px; }
-
 .Mt\(40px\) {
   margin-top: 40px; }
 
@@ -596,7 +593,7 @@ body.page-bg .news-item-bg {
       height: var(--hero-slider-height);
       z-index: 3;
       padding: 120px;
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.4);
       text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5); }
       #hero .slider .slide-content .slide-content-title {
         font: normal 5vw/100% var(--font-secondary);
