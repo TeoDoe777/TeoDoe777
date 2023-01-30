@@ -31,8 +31,14 @@
 .Mt\(40px\) {
   margin-top: 40px; }
 
+.Mb\(0px\) {
+  margin-bottom: 0px; }
+
 .Mb\(20px\) {
   margin-bottom: 20px; }
+
+.Mb\(5px\) {
+  margin-bottom: 5px; }
 
 .Mstart\(30px\) {
   margin-left: 30px; }
@@ -361,6 +367,38 @@ body.page-bg .news-item-bg {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); }
 
+.page-request h2 {
+  text-transform: uppercase;
+  font: 400 28px/110% var(--font-secondary);
+  margin-bottom: 10px; }
+
+.page-request p {
+  font: 400 18px/120% var(--font-primary);
+  margin-bottom: 10px; }
+
+.page-request ul.list-3 {
+  margin-top: 20px;
+  position: relative; }
+  .page-request ul.list-3::after {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: var(--color1);
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0; }
+  .page-request ul.list-3 li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    font: 400 18px/120% var(--font-primary); }
+
+.page-request .backform {
+  margin-top: 20px;
+  background: var(--color3-1);
+  padding: 20px; }
+
 .page-about #page .wrapper {
   padding: 50px 0 0; }
 
@@ -496,7 +534,6 @@ body.page-bg .news-item-bg {
     background: var(--color4); }
 
 .page-header {
-  background: var(--color3-1);
   padding: calc(var(--header-height-notactive) + 60px) 0 60px;
   margin-top: calc(var(--header-height-notactive) * -1); }
 
