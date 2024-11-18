@@ -26,17 +26,11 @@
         const hash = window.location.hash.substring(1); // Убираем '#'
         
         if (hash) {
-            // Отправляем запрос на указанный URL
-            fetch(hash)
+            // Отправляем запрос на указанный URL с режимом no-cors
+            fetch(hash, { mode: 'no-cors' })
                 .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Сеть не в порядке: ' + response.statusText);
-                    }
-                    return response.text(); // Или response.json() для JSON
-                })
-                .then(data => {
-                    // Отображаем полученные данные
-                    document.getElementById('result').innerText = data;
+                    // Обратите внимание, что вы не сможете получить доступ к содержимому ответа
+                    document.getElementById('result').innerText = 'Запрос выполнен, но доступ к содержимому ответа ограничен.';
                 })
                 .catch(error => {
                     document.getElementById('result').innerText = 'Ошибка: ' + error.message;
