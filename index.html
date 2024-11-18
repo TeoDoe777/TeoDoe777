@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Прокси с использованием фрагмента URL</title>
+    <title>Скачать файл</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,27 +17,22 @@
     </style>
 </head>
 <body>
-    <h1>Прокси с использованием фрагмента URL</h1>
-    <p>Введите URL после # в адресной строке.</p>
+    <h1>Скачать файл</h1>
+    <input type="text" id="fileUrl" placeholder="Введите URL файла" />
+    <button id="downloadBtn">Скачать файл</button>
     <div id="result"></div>
 
     <script>
-        // Получаем фрагмент URL
-        const hash = window.location.hash.substring(1); // Убираем '#'
-        
-        if (hash) {
-            // Отправляем запрос на указанный URL с режимом no-cors
-            fetch(hash, { mode: 'no-cors' })
-                .then(response => {
-                    // Обратите внимание, что вы не сможете получить доступ к содержимому ответа
-                    document.getElementById('result').innerText = 'Запрос выполнен, но доступ к содержимому ответа ограничен.';
-                })
-                .catch(error => {
-                    document.getElementById('result').innerText = 'Ошибка: ' + error.message;
-                });
-        } else {
-            document.getElementById('result').innerText = 'Нет данных для проксирования.';
-        }
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            const fileUrl = document.getElementById('fileUrl').value;
+            if (fileUrl) {
+                // Изменяем URL на тот, который нужно скачать
+                window.location.href = fileUrl;
+                document.getElementById('result').innerText = 'Загрузка файла...';
+            } else {
+                document.getElementById('result').innerText = 'Пожалуйста, введите URL файла.';
+            }
+        });
     </script>
 </body>
 </html>
